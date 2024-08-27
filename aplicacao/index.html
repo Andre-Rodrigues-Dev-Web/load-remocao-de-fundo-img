@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload de Imagem com Remoção de Fundo</title>
+<link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body>
+  <input type="file" id="uploadInput" accept="image/*" onchange="handleFile(event)">
+  <br>
+  <img src="" id="previewImg" class="preview-img" alt="Imagem selecionada">
+  <button id="removeBgButton" class="button" onclick="removeBackground()">Remover Fundo</button>
+  <div class="loading-bar" id="loadingBar">
+    <div class="loading-bar-progress" id="loadingProgress"></div>
+  </div>
+  <div id="loadingText" class="loading-text">Carregando...</div>
+
+  <script src="assets/js/theme.js"></script>
+</body>
+</html>
